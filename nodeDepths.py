@@ -1,5 +1,5 @@
 #Node Depths By Mirage
-#Time Complexity: O(n) | #Space Complexity
+#Time Complexity: O(n) | #Space Complexity: O(h)
 def nodeDepths(root):
     sumOfDepths = 0
     stack = [{"node": root, "depth": 0}]
