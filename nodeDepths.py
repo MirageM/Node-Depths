@@ -1,9 +1,9 @@
-#Node Depths
+#Node Depths By Mirage
 #Time Complexity: O(n) | #Space Complexity
 def nodeDepths(root):
     sumOfDepths = 0
     stack = [{"node": root, "depth": 0}]
-    while len(stack) > 0:
+    while 0 < len(stack):
         nodeInfo = stack.pop()
         node, depth = nodeInfo["node"], nodeInfo["depth"]
         if node is None:
@@ -12,6 +12,7 @@ def nodeDepths(root):
         stack.append({"node": node.left, "depth": depth + 1})
         stack.append({"node": node.right, "depth": depth + 1})
     return sumOfDepths
+        
 
 
 # This is the class of the input binary tree.
